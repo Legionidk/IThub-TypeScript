@@ -1,6 +1,6 @@
 import UnitDecorator from "../unit/unitDecorator";
 
-export default class Poison extends UnitDecorator {
+export default class PoisonCharacter extends UnitDecorator {
     protected poisonDamage: number = 10;
 
     get name(): string {

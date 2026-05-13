@@ -1,6 +1,6 @@
 import UnitDecorator from "../unit/unitDecorator";
 
-export default class Frost extends UnitDecorator {
+export default class FrostCharacter extends UnitDecorator {
     protected slowdown: number = 15;
 
     get name(): string {

@@ -1,6 +1,6 @@
 import UnitDecorator from "../unit/unitDecorator";
 
-export default class Fire extends UnitDecorator {
+export default class FireCharacter extends UnitDecorator {
     protected fireDamage: number = 10;
 
     get name(): string {
