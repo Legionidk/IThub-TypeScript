@@ -1,3 +1,3 @@
 export default interface IFileReader {
-    readFile(): string[];
+    readFile(filePath: string): string[];
 }

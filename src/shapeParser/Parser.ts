@@ -1,14 +1,8 @@
 import IParser from "./IParser";
 
 export default class Parser implements IParser {
-    protected data: string[];
-
-    constructor(lines: string[]) {
-        this.data = lines;
-    }
-
-    parse(): {}[] {
-        return this.data.map((line) => {
+    parse(lines: string[]): {}[] {
+        return lines.map((line) => {
             const match = line.match(/Фигурка \d+: (\S+) (\S+)/);
 
             if (!match) {

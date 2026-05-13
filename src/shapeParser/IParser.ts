@@ -1,3 +1,3 @@
 export default interface IParser {
-    parse(): {}[];
+    parse(lines: string[]): {}[];
 }
