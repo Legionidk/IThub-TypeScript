@@ -10,7 +10,7 @@ export default class ShapesParser implements IParser<ShapeRecord> {
                 throw new Error(`Неверный лог!\n${line}`);
             }
 
-            const [shape, color] = match;
+            const [, shape, color] = match;
             return new ShapeRecord(shape, color);
         });
     }
