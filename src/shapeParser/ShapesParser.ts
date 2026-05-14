@@ -1,7 +1,8 @@
 import IParser from "./IParser";
+import ShapeRecord from "../records/ShapeRecord";
 
-export default class Parser implements IParser {
-    parse(lines: string[]): {}[] {
+export default class ShapesParser implements IParser<ShapeRecord> {
+    parse(lines: string[]): ShapeRecord[] {
         return lines.map((line) => {
             const match = line.match(/Фигурка \d+: (\S+) (\S+)/);
 
@@ -10,7 +11,7 @@ export default class Parser implements IParser {
             }
 
             const [shape, color] = match;
-            return { shape, color };
+            return new ShapeRecord(shape, color);
         });
     }
 }
