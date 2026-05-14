@@ -8,7 +8,7 @@ const shapesParser = new ShapesParser()
 const colorCollector = new ColorCollector()
 const shapesCollector = new ShapesCollector()
 
-const data = fileReader.readFile("src/data/shares.txt")
+const data = fileReader.readFromTxt("src/data/shares.txt")
 const parsedData = shapesParser.parse(data)
 const colorsData = colorCollector.calculate(parsedData)
 const shapesData = shapesCollector.calculate(parsedData)

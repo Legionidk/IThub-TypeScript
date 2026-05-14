@@ -1,3 +1,3 @@
 export default interface IFileReader {
-    readFile(filePath: string): string[];
+    readFromTxt(filePath: string): string[];
 }
